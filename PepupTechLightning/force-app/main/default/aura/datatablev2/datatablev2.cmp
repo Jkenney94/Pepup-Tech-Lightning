@@ -1,0 +1,34 @@
+<aura:component controller="ContactListController">
+    <aura:attribute name="Contacts" type="Contact" />
+    <aura:attribute name="Columns" type="List" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.myAction}" />
+
+    <!--Version 2-->
+    <lightning:card iconName="standard:contact" title="Contact List">
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="First Name">First Name</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Last Name">Last Name</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="slds-hint-parent">
+                    <aura:iteration items="{!v.Contacts}" var="cont">
+                        <td data-label="First Name">
+                            <div class="slds-truncate" title="{!cont.FirstName}">{!cont.FirstName}</div>
+                        </td>
+                        <td data-label="Last Name">
+                            <div class="slds-truncate" title="{!cont.LastName}">{!cont.LastName}</div>
+                        </td>
+                    </aura:iteration>
+                </tr>
+            </tbody>
+        </table>
+    </lightning:card>
+</aura:component>	

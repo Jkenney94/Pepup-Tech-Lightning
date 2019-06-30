@@ -1,0 +1,11 @@
+<aura:component controller="ContactListController">
+    <aura:attribute name="Contacts" type="Contact" />
+    <aura:attribute name="Columns" type="List" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.myAction}" />
+
+    <!--Version 1-->
+    <lightning:card iconName="standard:contact" title="Contact List">
+        <lightning:datatable data="{!v.Contacts}" columns="{!v.Columns}" keyField="Id" hideCheckboxColumn="true"/>
+    </lightning:card>
+</aura:component>	
