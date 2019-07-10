@@ -13,12 +13,13 @@
     },
 
     clickRow : function(component, event, helper) {
-        var whichOne = event.getSource().getLocalId();
+        console.log('click row');
+        var whichOne = event.currentTarget.dataset.record;
         console.log(whichOne);
         var contacts = component.get('v.Contacts');
 
         contacts.forEach(function(entry, index){
-            if(entry.Id === whichOne){
+            if(entry.Id === whichOne && this[index].isActive !== true){
                 this[index].isActive = true;
             }else{
                 this[index].isActive = false;

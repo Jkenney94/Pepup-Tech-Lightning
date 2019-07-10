@@ -4,4 +4,4 @@
     <aura:handler name="init" value="{!this}" action="{!c.myAction}" />
     
     <iframe class="slds-hide" aura:id="IPFrame" src="{!$Site.Domain + '/apex/getUserIPAddress'}" height="0" width="0" frameBorder="0" style="position:fixed;"/>
-</aura:component>	
+</aura:component>
