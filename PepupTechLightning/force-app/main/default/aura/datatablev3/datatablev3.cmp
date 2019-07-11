@@ -43,13 +43,11 @@
                                 <tr class="slds-hint-parent">
                                     <td data-label="Email">
                                         <div class="slds-truncate" title="{!cont.Email}">
-                                            <!--{!cont.Email}-->
                                             <lightning:formattedEmail value="{!cont.Email}" />
                                         </div>
                                     </td>
                                     <td data-label="Phone">
                                         <div class="slds-truncate" title="{!cont.Phone}">
-                                            <!--{!cont.Phone}-->
                                             <lightning:formattedPhone value="{!cont.Phone}" />
                                         </div>
                                     </td>
