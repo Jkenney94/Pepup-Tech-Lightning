@@ -1,0 +1,21 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <aura:attribute name="recordId" type="String" />
+
+    <lightning:card iconName="standard:account" title="Account Snapshot">
+        <!--Version 1-->
+        <lightning:recordForm recordId="{!v.recordId}" objectApiName="Account" layoutType="Compact" columns="2"/>
+        <!--Version 2-->
+        <!--<lightning:recordViewForm recordId="{!v.recordId}" objectApiName="Account">
+            <div class="slds-grid">
+                <div class="slds-col slds-size_2-of-3">
+                    <lightning:outputField fieldName="Name" />
+                    <lightning:outputField fieldName="Phone" />
+                </div>
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning:outputField fieldName="Industry" />
+                    <lightning:outputField fieldName="AnnualRevenue" />
+                </div>
+            </div>
+        </lightning:recordViewForm>-->
+    </lightning:card>
+</aura:component>	

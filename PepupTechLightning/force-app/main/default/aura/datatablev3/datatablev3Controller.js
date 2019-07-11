@@ -13,9 +13,7 @@
     },
 
     clickRow : function(component, event, helper) {
-        console.log('click row');
         var whichOne = event.currentTarget.dataset.record;
-        console.log(whichOne);
         var contacts = component.get('v.Contacts');
 
         contacts.forEach(function(entry, index){
