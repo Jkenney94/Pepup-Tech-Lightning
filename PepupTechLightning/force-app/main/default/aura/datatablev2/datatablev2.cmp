@@ -10,10 +10,10 @@
             <thead>
                 <tr class="slds-line-height_reset">
                     <th class="" scope="col">
-                        <div class="slds-truncate" title="First Name">First Name</div>
+                        <div class="slds-truncate redText" title="First Name">First Name</div>
                     </th>
                     <th class="" scope="col">
-                        <div class="slds-truncate" title="Last Name">Last Name</div>
+                        <div class="slds-truncate redText" title="Last Name">Last Name</div>
                     </th>
                 </tr>
             </thead>
