@@ -1,0 +1,11 @@
+<aura:component controller="SimpleServerSideController">
+    <aura:method name="logParam" description="Sample method with parameter">
+        <aura:attribute name="message" type="String" default="default message" />
+    </aura:method>
+
+    <aura:method name="echo" description="Sample method with server-side call">
+        <aura:attribute name="callback" type="Function" />
+    </aura:method>
+
+    <p>This component has an aura:method definition.</p>
+</aura:component>	

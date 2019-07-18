@@ -1,0 +1,7 @@
+<aura:component>
+    <p>Parent component calls aura:method in child component</p>
+    <c:auraMethod aura:id="child" />
+
+    <lightning:button label="Call aura:method in child component" onclick="{!c.callAuraMethod}" />
+    <lightning:button label="Call aura:method Server Trip" onclick="{!c.callAuraMethodServerTrip}" />
+</aura:component>	
