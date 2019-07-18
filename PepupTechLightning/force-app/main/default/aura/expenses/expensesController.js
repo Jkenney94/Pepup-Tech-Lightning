@@ -1,5 +1,3 @@
-
-
 ({
     // Load expenses from Salesforce
     doInit: function(component, event, helper) {

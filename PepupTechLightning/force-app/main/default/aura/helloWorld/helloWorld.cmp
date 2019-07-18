@@ -1,5 +1,3 @@
-
-
 <aura:component description="helloWorld">
 
     <c.helloHeading/>

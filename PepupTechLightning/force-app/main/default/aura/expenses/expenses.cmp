@@ -1,5 +1,3 @@
-
-
 <aura:component controller="ExpensesController">
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
     <aura:handler name="updateExpense" event="c:expensesItemUpdate" action="{!c.handleUpdateExpense}"/>

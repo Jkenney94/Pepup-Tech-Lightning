@@ -1,5 +1,3 @@
-
-
 ({
 
     saveExpense: function(component, expense, callback) {
